@@ -8,12 +8,12 @@ function HookCounter() {
         <>
         <button onClick={() => setCount(count + 2)}>count {count} </button>
         </>
-     );
+     ); // (3)
 }
 
 export default HookCounter;
 
-/*comments
+/*Comments
  3 steps
 - create a component
 - need a state variable intialized to zero
