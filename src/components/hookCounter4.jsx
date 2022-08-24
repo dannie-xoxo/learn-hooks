@@ -3,7 +3,7 @@ import React,{useState} from 'react'; //(1) import useState
 
 function HookCounter4() {
     const [items, setItems] = useState([]) //(2) declare the useState 
-    const addItems = () => { //(3) set the new state variable
+    const addItems = () => {  //(3) set the new state variable
         setItems([...items, {
             id: items.length,
             value: Math.floor(Math.random() * 10) + 1 //generate a random number
