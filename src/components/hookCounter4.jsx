@@ -11,7 +11,7 @@ function HookCounter4() {
     }
     return ( 
         <>
-        <button onClick={addItems}>Add an Item</button>
+        <button onClick={addItems}>Add an Item</button>  
         <ul>
             {
                 items.map(item => ( // declare the map method which is used to iterate over

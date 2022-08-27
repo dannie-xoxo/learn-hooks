@@ -1,10 +1,13 @@
 //useState with object
-import React, {useState} from 'react';
+import React, {useState} from 'react';  //(1)
 
 function HookCounter3() {
                                 //object as a parameter in the useState 
-    const [name, setName] = useState({firstName: '', lastName: ''})
-    return ( 
+    const [name, setName] = useState({   //(2)
+        firstName: '',
+        lastName: ''
+    })
+    return (   //(3)
         <>
         <form>
             <input type='text' value={name.firstName}
