@@ -1,3 +1,4 @@
+// Fetching data using the useReducer
 import React, {useReducer, useEffect}from 'react'; //(1- import necessary hooks and axios)
 import axios from 'axios';
 
