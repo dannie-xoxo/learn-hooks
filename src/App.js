@@ -14,6 +14,10 @@ import Reducer1 from './components/Reducer1';
 import Reducer2 from './components/Reducer2';
 import Reducer3 from './components/Reducer3';
 import DataFetching from './components/DataFetching';
+import Title from './components/title';
+import Count from './components/count';
+import ParentComp from './components/ParentComp';
+import Memo from './components/memo';
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
 
@@ -36,7 +40,9 @@ function App () {
      {/* <Reducer1 /> */}
      {/* <Reducer2 /> */}
      {/* <Reducer3 /> */}
-     <DataFetching />
+     {/* <DataFetching /> */}
+     {/* <ParentComp /> */}
+     <Memo />
     </div>
   );
   }
