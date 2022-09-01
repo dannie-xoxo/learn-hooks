@@ -18,6 +18,8 @@ import Title from './components/title';
 import Count from './components/count';
 import ParentComp from './components/ParentComp';
 import Memo from './components/memo';
+import Ref1 from './components/Ref1';
+import Ref2 from './components/Ref2';
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
 
@@ -42,7 +44,9 @@ function App () {
      {/* <Reducer3 /> */}
      {/* <DataFetching /> */}
      {/* <ParentComp /> */}
-     <Memo />
+     {/* <Memo /> */}
+     {/* <Ref1 /> */}
+     <Ref2 />
     </div>
   );
   }
