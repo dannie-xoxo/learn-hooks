@@ -3,19 +3,42 @@ import React, {useState} from 'react';  //(1)
 
 function HookCounter3() {
                                 //object as a parameter in the useState 
-    const [name, setName] = useState({   //(2)
+    const [details, setDetails] = useState({   //(2)
         firstName: '',
-        lastName: ''
+        lastName: '',
+        eMail: ''
     })
-    return (   //(3)
+
+    const onSubmitChange = (event) => {
+        event.preventDefault()
+        alert('Subscription sucessful')
+
+    }
+    return (   //(3) 
         <>
-        <form>
-            <input type='text' value={name.firstName}
-             onChange={(event) => setName({...name, firstName: event.target.value})} />
-            <input type='text' value={name.lastName} 
-             onChange={(event) => setName({...name,lastName: event.target.value})}/>
-            <p>Your  first name is: {name.firstName}</p>
-            <p>Your last name is: {name.lastName}</p>
+        <form onSubmit={onSubmitChange}>
+            <div>
+                <label>First-Name: </label>
+            <input type='text' value={details.firstName}
+             onChange={(event) => setDetails({...details, firstName: event.target.value})} required/>
+             </div>
+
+             <div>
+             <label>Last-Name: </label>
+            <input type='text' value={details.lastName} 
+             onChange={(event) => setDetails({...details, lastName: event.target.value})} required/>
+             </div>
+
+             <div>
+                <label>E-mail: </label>
+                <input type='text' value={details.eMail}
+               onChange={(event) => setDetails({...details, eMail: event.target.value})} required />
+             </div>
+             <button type='submit'>Submit</button>
+
+            <p>Your  first naame is: {details.firstName}</p>
+            <p>Your last namme is: {details.lastName}</p>
+            <p>Your email address: {details.eMail}</p>
         </form>
         </>
      );

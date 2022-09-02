@@ -20,6 +20,10 @@ import ParentComp from './components/ParentComp';
 import Memo from './components/memo';
 import Ref1 from './components/Ref1';
 import Ref2 from './components/Ref2';
+import Doc1 from './components/Doc1';
+import Doc2 from './components/Doc2';
+import Counter1 from './components/counter1';
+import Counter2 from './components/counter2';
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
 
@@ -28,7 +32,7 @@ function App () {
     <div className="App">
      {/* <HookCounter /> */}
      {/* <HookCounter2 /> */}
-     {/* <HookCounter3 /> */}
+     <HookCounter3 />
      {/* <HookCounter4 /> */}
      {/* <Effect1 /> */}
      {/* <Effect2 /> */}
@@ -46,7 +50,11 @@ function App () {
      {/* <ParentComp /> */}
      {/* <Memo /> */}
      {/* <Ref1 /> */}
-     <Ref2 />
+     {/* <Ref2 /> */}
+     {/* <Doc1 />
+     <Doc2 /> */}
+     {/* <Counter1 /> */}
+     {/* <Counter2 /> */}
     </div>
   );
   }

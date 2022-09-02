@@ -3,7 +3,7 @@ import React, {useState} from 'react'; //(1)
 
 function HookCounter() {
     // [array destructuring]
-    const [count, setCount]= useState(0) // (2)
+    const [count, setCount] = useState(0) // (2)
     return ( 
         <>
         <button onClick={() => setCount(count + 2)}>count {count} </button>
