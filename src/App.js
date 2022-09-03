@@ -32,7 +32,7 @@ function App () {
     <div className="App">
      {/* <HookCounter /> */}
      {/* <HookCounter2 /> */}
-     <HookCounter3 />
+     {/* <HookCounter3 /> */}
      {/* <HookCounter4 /> */}
      {/* <Effect1 /> */}
      {/* <Effect2 /> */}

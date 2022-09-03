@@ -31,8 +31,9 @@ export default HookCounter4;
 - with the useState hook, the state doesn't have to be an object,
 it could be an array, string, boolean or a number
 - the useState hook returns an array with 2 elements
-1 the current value of the state
-2 the setter functon.
+1 the current value of the state (count)
+2 the setter functon. (setCount)
 - New state value depends on the previous state value? you can pass a function to the setter function
 - when dealing with objects and arrays, always make sure to spread your state variable and then 
-call the setter function.  */
+call the setter function.
+- line 7: spread operator used to merge the current state to the updated state  */

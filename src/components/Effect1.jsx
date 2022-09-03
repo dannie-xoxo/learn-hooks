@@ -13,11 +13,11 @@ function Effect1() {
          within the array, you need to specify whether prop or state that need 
          to change or be updated when the component re-renders. */
         console.log('Updating files')
-        document.title = `clicked ${count} times` 
-    }, [count])
+        document.title = `${name} clicked ${count} times` 
+    }, [count, name])
     return ( 
         <>
-        <input type='text' value={name}  onChange={(event) => setName(event.target.value)} />
+        <input type='text' value= {name}  onChange={(event) => setName(event.target.value)} />
         <button onClick={() => setCount(count + 2)}>Clicked {count} times</button>
         </>
      );
