@@ -6,11 +6,12 @@ function Effect4() {
 
     const tick = () => { //(3)
         setCount(prevCount => prevCount + 1) 
+
     }
     useEffect (() => {  //(4)
         const interval = setInterval( tick, 1000) // mimic the componentDidMount lifecycle method 
         return(() => {  
-            clearInterval (interval) // the clean up code (mimic the componentWillUnMount)
+            clearInterval (interval) // the clean up cod (mimic the componentWillUnMount)
         })
     },[]) 
     

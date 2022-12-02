@@ -37,7 +37,7 @@ function App () {
      {/* <Effect1 /> */}
      {/* <Effect2 /> */}
      {/* <Effect3 /> */}
-     {/* <Effect4 /> */}
+     <Effect4 />
      {/* <UserContext.Provider value={'Daniel'}>
       <ChannelContext.Provider value={'Orisaeke'}>
      <ComponentA />

@@ -1,6 +1,6 @@
 /* useRef Hook
 -used to reference or access DOM elements.
-- allows you to persist valuesbetween renders.
+- allows you to persist values between renders.
 - it can also be used to store a muttable value that
 doesnt cause a re-render when updated */
 
